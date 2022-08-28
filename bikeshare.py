@@ -149,7 +149,8 @@ def trip_duration_stats(df):
 def raw_data(df):
 
     x = -5
-
+	
+    #Print 5 lines of raw data
     while (input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n').lower() != 'no'):
         print(df[x:x+5])
         x += 5
