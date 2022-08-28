@@ -84,6 +84,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
+    #Print time title
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
@@ -148,7 +149,8 @@ def trip_duration_stats(df):
 def raw_data(df):
 
     x = -5
-
+	
+    #Print 5 lines of raw data
     while (input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n').lower() != 'no'):
         print(df[x:x+5])
         x += 5
@@ -197,6 +199,7 @@ def main():
         user_stats(df)
         raw_data(df)
 
+	#Ask user if they want to restart
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
